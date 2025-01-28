@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <!-- FUENTE TEXTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- HOJA ESTILOS CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora TDD</title>
+  </head>
+  <body onload="operaciones()">
+    <main>
+      <h1 class="title">Calculadora</h1>
+      <!-- INPUT GROUPS -->
+      <div class="group-input">
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+      </div>
+      <!-- BTN GROUP -->
+      <div class="group-btn">
+        <button id="add-btn">+</button>
+        <button id="substract-btn">-</button>
+        <button id="multiply-btn">*</button>
+        <button id="divide-btn">/</button>
+      </div>
+      <!-- RESULTADO FINAL -->
+      <p class="result-txt">
+        <span>Resultado:</span>
+        <span id="resultado">0.00</span>
+      </p>
+    </main>
+    <!-- SCRIPT, LÓGICA JS -->
+    <script src="calculadora.js"></script>
+  </body>
+</html>
