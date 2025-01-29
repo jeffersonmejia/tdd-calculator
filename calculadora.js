@@ -25,8 +25,12 @@ function operaciones() {
     num2 = 0,
     result = 0
   d.addEventListener('click', (e) => {
-    num1 = parseFloat($number1.value)
-    num2 = parseFloat($number2.value)
+    if ($number1.value.length != 0) {
+      num1 = parseFloat($number1.value)
+    }
+    if ($number2.value.length != 0) {
+      num2 = parseFloat($number2.value)
+    }
 
     if (e.target.matches('#add-btn')) {
       result = suma(num1, num2)
